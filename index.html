@@ -1,18 +1,22 @@
 <html>
 
 <head>
-    <link href="css/video-js.min.css" rel="stylesheet" />
+    <!-- <link href="css/video-js.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="css/videojs-plus.css" />
 </head>
 
 <body>
-    <video id="video" class="video-js vjs-default-skin vjs-16-9" controls data-setup='{"liveui": true}'></video>
+    <video id="video" class="video-js vjs-default-skin vjs-16-9" controls data-setup='{"liveui": true}'>
+        <source
+            src="https://live-festival-2020-elevate-use2.streaming.media.azure.net/11ff0ac9-cb7f-45bc-a71c-4b10d3e70133/286962ada7.ism/manifest(format=m3u8-aapl).m3u8"
+            type="application/x-mpegURL" />
+    </video>
 
     <script src="js/video.min.js"></script>
+    <script src="js/videojs-plus.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/videojs-contrib-eme@3.7.0/dist/videojs-contrib-eme.min.js"></script>
+    <script src="https://src.litix.io/videojs/3/videojs-mux.js"></script>
     <script type="module" src="js/index.js"></script>
 </body>
-<html>
-
-</html>
 
 </html>
